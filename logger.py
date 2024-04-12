@@ -7,8 +7,7 @@ class Logger:
 
         if not exists(self.filename):
             with open(self.filename, 'w', newline='') as file:
-                writer = csv.writer(file)
-                writer.writerow(['City', 'Temperature'])
+                csv.writer(file)
 
     def logging(self, data):
         city = data['name']
