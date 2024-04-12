@@ -11,7 +11,8 @@ class DataFetcher:
         try:
             payload = {
                 'q': city,
-                'APPID': self.api_key
+                'APPID': self.api_key,
+                'units': 'metric'
             }
             response = requests.get(f'{PREFIX}/weather', params=payload)
 
