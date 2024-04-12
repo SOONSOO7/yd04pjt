@@ -2,11 +2,11 @@ import csv
 from os.path import exists
 
 class Logger:
-    def __init__(self, filename="log.csv"):
-        self.filename = filename
+    def __init__(self, file_name):
+        self.file_name = file_name
 
-        if not exists(self.filename):
-            with open(self.filename, 'w', newline='') as file:
+        if not exists(self.file_name):
+            with open(self.file_name, 'w', newline='') as file:
                 csv.writer(file)
 
     def logging(self, data):
@@ -16,7 +16,7 @@ class Logger:
         updated = False
         rows = []
         try:
-            with open(self.filename, 'r', newline='') as file:
+            with open(self.file_name, 'r', newline='') as file:
                 reader = csv.reader(file)
                 for row in reader:
                     if row[0] == city:
@@ -24,7 +24,7 @@ class Logger:
                         updated = True
                     rows.append(row)
 
-            with open(self.filename, 'w', newline='') as file:
+            with open(self.file_name, 'w', newline='') as file:
                 writer = csv.writer(file)
                 writer.writerows(rows)
 
