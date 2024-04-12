@@ -15,7 +15,6 @@ def main():
     
     raw_data = fetcher.fetch_weather(city)
     processed_data = processor.process_data(raw_data)
-    print(processed_data)
     # logger.save_data(processed_data)
     visualizer.plot_data(processed_data)
 
