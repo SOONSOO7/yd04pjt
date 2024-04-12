@@ -4,8 +4,8 @@ openweathermap API를 이용한 파이썬 날씨 대시보드 개발을 진행�
 
 # 실행방법
 1. `python main.py`
-2. 이후 input 창에서 도시 이름 입력
-   여러개 입력하고 싶다면 `seoul,paris,osaka` 이렇게 입력하면 됩니다
+2. 이후 input 창에서 도시 이름 입력 ex) seoul
+   - 여러개 입력하고 싶다면 `seoul,paris,osaka` 이렇게 ,를 붙여서 입력하면 됩니다
 
 **1. main에서 api키를 openweathermap에서 불러옵니다.**
 
