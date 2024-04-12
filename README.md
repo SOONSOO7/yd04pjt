@@ -3,6 +3,7 @@
 openweathermap API를 이용한 파이썬 날씨 대시보드 개발을 진행합니다.
 
 **1. main에서 api키를 openweathermap에서 불러옵니다.**
+
 **2. data_fetcher를 실행하여 api키에서 도시 정보를 추출하고, jason으로 저장합니다.**
 - 도시의 이름이 없는 경우 오류 멘트를 출력합니다.
 - 도시의 이름이 있는 경우 버전관리가 용이하게 PREFIX로 api를 가져오고, q, appid를 파라미터로 지정합니다.
