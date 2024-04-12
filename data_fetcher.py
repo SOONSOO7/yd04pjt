@@ -16,6 +16,6 @@ class DataFetcher:
             }
             response = requests.get(f'{PREFIX}/weather', params=payload)
 
-            return response.text
+            return response.json()
         except:
             print('API를 호출하는 도중 문제가 발생하였습니다.')
