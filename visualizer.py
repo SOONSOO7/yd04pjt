@@ -15,3 +15,6 @@ class Visualizer:
 
         fig.write_image(output_file)
         print(f"Graph saved to {output_file}")
+
+test = Visualizer()
+test.plot_data()
